@@ -59,7 +59,9 @@ config = {
     'lidar_max_dist': 3,
     'lidar_num_bins': 16,
     'hazards_num': 4,
-    'vases_num': 4
+    'vases_num': 4,
+    # 以下の設定をおすすめ！
+    '_seed': np.random.randint(2**16)
 }
 
 env = Engine(config)
